@@ -1,0 +1,10 @@
+[Unit]
+Description=Flood Trump's DEI snitch service with gay porn
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/flood_DEI
+ExecStart=gunicorn --workers 4 --bind 0.0.0.0:7070 main:app
+
+[Install]
+WantedBy=multi-user.target
